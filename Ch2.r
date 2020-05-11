@@ -5,6 +5,8 @@ CH2.1 <- function(){
 	print(x)
 	c(10.4,5.6,3.1,6.4,21.7) -> x
 	print(x)
+	y <- c(x, 0, x)
+	print(y)
 	}
 
 CH2.1()
