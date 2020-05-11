@@ -14,9 +14,14 @@ CH2.2 <- function(){
 	
 	v <- 2*x +y +1
 	print(v)	
-	cat("\n")
+	cat("\n")#New line to make things pretty
+
 	print(mean(x))
 	print(var(x))
+	cat("\n") #New line to make things pretty
+
+	print(sqrt(-17))
+	print(sqrt(-17 +0i))
 	}
 CH2.1()
 CH2.2()
