@@ -23,5 +23,12 @@ CH2.2 <- function(){
 	print(sqrt(-17))
 	print(sqrt(-17 +0i))
 	}
+Ch2.3 <- function(){
+	cat("\n") #New line to make things pretty
+	n <- 10
+	print(1:n-1)
+	print(1:(n-1))
+	}
 CH2.1()
 CH2.2()
+Ch2.3()
