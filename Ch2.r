@@ -28,6 +28,17 @@ Ch2.3 <- function(){
 	n <- 10
 	print(1:n-1)
 	print(1:(n-1))
+	cat("\n")
+	
+	s3 <- seq(-5,5,by=.2)
+	s4 <- seq(length = 51, from = -5, by=.2)
+	print(all(s3 == s4))
+
+	x <- 1:5
+	s5 <- rep(x, times=5)
+	print(s5)
+	s6 <- rep(x, each=5)
+	print(s6)
 	}
 CH2.1()
 CH2.2()
