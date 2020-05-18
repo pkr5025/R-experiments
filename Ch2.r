@@ -55,7 +55,20 @@ Ch2.4 <- function(){
 	print(temp1 + temp2)
 
 	}
+Ch2.5 <- function() {
+	cat("\n")
+	z <- c(1:3, NA); ind<- is.na(z)
+	print(z)
+	print(ind)
+
+	x = NA
+	print( x == NA)
+	print( is.na(x))
+
+	print(is.nan(x))
+	}
 CH2.1()
 CH2.2()
 Ch2.3()
 Ch2.4()
+Ch2.5()
