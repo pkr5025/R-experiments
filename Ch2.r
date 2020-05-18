@@ -40,6 +40,16 @@ Ch2.3 <- function(){
 	s6 <- rep(x, each=5)
 	print(s6)
 	}
+Ch2.4 <- function(){
+	cat("\n")
+	x <- 11:15
+	temp1 <- x>13
+	print(x)
+	print(temp1)
+
+
+	}
 CH2.1()
 CH2.2()
 Ch2.3()
+Ch2.4()
