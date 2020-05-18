@@ -46,7 +46,13 @@ Ch2.4 <- function(){
 	temp1 <- x>13
 	print(x)
 	print(temp1)
+	cat("\n")
 
+	temp2 <- !temp1
+	print(temp2)
+	print(temp1 & temp2)
+	print(temp1 | temp2)
+	print(temp1 + temp2)
 
 	}
 CH2.1()
