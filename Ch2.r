@@ -85,6 +85,20 @@ Ch2.7 <- function(){
 	print(z[1])
 
 	print(z[-(1:2)]) #negative indexing: excludes elements 1 and 2
+	
+	fruit <- c(1,4,7,10)
+	names(fruit) <- c("banana", "strawberry", "other 1", "other 2") #gives vector fruit names attribute
+	lunch <- fruit[c("banana", "other 2")]
+	cat("\n")
+	print(fruit)
+	cat("\n")
+	print(lunch)
+	cat("\n")
+	print(unname(lunch))
+	cat("\n")
+
+	lunch[lunch>4] <- 4
+	print(lunch)
 	}
 CH2.1()
 CH2.2()
