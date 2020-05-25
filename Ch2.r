@@ -83,6 +83,8 @@ Ch2.7 <- function(){
 	z <- 1:3
 	print(z[0]) #error, indexing starts at 1 in R
 	print(z[1])
+
+	print(z[-(1:2)]) #negative indexing: excludes elements 1 and 2
 	}
 CH2.1()
 CH2.2()
