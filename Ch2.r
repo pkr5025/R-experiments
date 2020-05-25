@@ -74,9 +74,17 @@ Ch2.6 <- function() {
 	labs <- paste(c("X", "Y"), 1:10)
 	print(labs)
 	}
+Ch2.7 <- function(){
+	cat("\n")
+	x = c(Inf/Inf, 4, 0/0)
+	y <- x[!is.na(x)]
+	print(x)
+	print(y)
+	}
 CH2.1()
 CH2.2()
 Ch2.3()
 Ch2.4()
 Ch2.5()
 Ch2.6()
+Ch2.7()
