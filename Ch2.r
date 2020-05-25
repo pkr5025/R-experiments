@@ -67,8 +67,16 @@ Ch2.5 <- function() {
 
 	print(is.nan(x))
 	}
+Ch2.6 <- function() {
+	cat("\n")
+	labs <- paste(c("X", "Y"), 1:10, sep="")
+	print(labs)
+	labs <- paste(c("X", "Y"), 1:10)
+	print(labs)
+	}
 CH2.1()
 CH2.2()
 Ch2.3()
 Ch2.4()
 Ch2.5()
+Ch2.6()
