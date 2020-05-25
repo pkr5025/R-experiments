@@ -76,10 +76,13 @@ Ch2.6 <- function() {
 	}
 Ch2.7 <- function(){
 	cat("\n")
-	x = c(Inf/Inf, 4, 0/0)
+	x <- c(Inf/Inf, 4, 0/0)
 	y <- x[!is.na(x)]
 	print(x)
 	print(y)
+	z <- 1:3
+	print(z[0]) #error, indexing starts at 1 in R
+	print(z[1])
 	}
 CH2.1()
 CH2.2()
