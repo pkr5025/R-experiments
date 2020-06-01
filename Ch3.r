@@ -23,7 +23,14 @@ Ch3.2 <- function(){
 	a[3] <- 42
 	print(length(a))
 	print(a)
-	}
 
+	cat("\n")
+	long <- 3:15
+	print(long)
+	long <- long[2 * 1:5]
+	print(long)
+	length(long) <- 2
+	print(long)
+	}
 Ch3.1()
 Ch3.2()
