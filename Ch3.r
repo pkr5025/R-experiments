@@ -13,4 +13,12 @@ Ch3.1 <- function(){
 	print(c)
 	}
 
+Ch3.2 <- function(){
+	cat("\n")
+	a <- character()
+	print(mode(a))
+	print(length(a))
+	}
+
 Ch3.1()
+Ch3.2()
