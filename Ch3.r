@@ -11,13 +11,18 @@ Ch3.1 <- function(){
 	print(mode(some_digits))
 	c <- as.integer(some_digits)
 	print(c)
+	cat("\n")
 	}
 
 Ch3.2 <- function(){
-	cat("\n")
 	a <- character()
 	print(mode(a))
 	print(length(a))
+
+	cat("\n")
+	a[3] <- 42
+	print(length(a))
+	print(a)
 	}
 
 Ch3.1()
