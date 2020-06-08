@@ -1,3 +1,4 @@
+### Introduce mode and length ###
 Ch3.1 <- function(){
 	a = c(1,2,3)
 	print(a)
@@ -14,6 +15,7 @@ Ch3.1 <- function(){
 	cat("\n")
 	}
 
+### Section on object lengths ###
 Ch3.2 <- function(){
 	a <- character()
 	print(mode(a))
@@ -34,6 +36,7 @@ Ch3.2 <- function(){
 
 	}
 
+### Section on getting and setting attributes ###
 Ch3.3 <- function(){
 	a <- 1:3
 	print(a)
@@ -46,6 +49,7 @@ Ch3.3 <- function(){
 # Produces error at dimensions don't match
 	}
 
+# Nothing needed for section 3.4
 
 Ch3.1()
 Ch3.2()
