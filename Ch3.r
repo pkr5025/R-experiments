@@ -40,7 +40,10 @@ Ch3.3 <- function(){
 	print(attr(a,"dim"))
 	cat("\n")
 	
-
+#	attr(a, "dim") <- c(10,10)
+#	print(a)
+#	print(attr(a,"dim"))
+# Produces error at dimensions don't match
 	}
 
 
