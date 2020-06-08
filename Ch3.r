@@ -24,13 +24,26 @@ Ch3.2 <- function(){
 	print(length(a))
 	print(a)
 
-	cat("\n")
 	long <- 3:15
 	print(long)
 	long <- long[2 * 1:5]
 	print(long)
 	length(long) <- 2
 	print(long)
+	cat("\n")
+
 	}
+
+Ch3.3 <- function(){
+	a <- 1:3
+	print(a)
+	print(attr(a,"dim"))
+	cat("\n")
+	
+
+	}
+
+
 Ch3.1()
 Ch3.2()
+Ch3.3()
