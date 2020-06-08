@@ -7,6 +7,11 @@ Ch4.2 <- function(){
 	print(somestatesf)
 	cat("\n")
 	print(levels(somestatesf))
+	cat("\n")
+
+	incomes <- c(65, 40, 32, 56, 120, 400, 500)
+	incmeans <- tapply(incomes, somestatesf, mean)
+	print(incmeans)
 	}
 
 Ch4.2()
