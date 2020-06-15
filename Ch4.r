@@ -22,8 +22,6 @@ Ch4.2 <- function(){
 	qt(.95, samplesizes)
 
 	}
-Ch4.3 <- function(){
-	}
-
+#Nothing needed for section 4.3.  Just take note of ordered factors
 
 Ch4.2()
