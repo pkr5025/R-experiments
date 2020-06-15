@@ -19,10 +19,22 @@ Ch5.2 <- function(){
 	
 	# print subsection of the array
 	print(z[2,,])
+	cat("\n")
 		
+	}
+
+#5.3 Index Matrices
+
+Ch5.3 <- function(){
+	# make 4x5 array
+	x <- 1:20
+	dim(x) <- c(4,5)
+	index <- array(c(2:4,4:2), dim = c(3,2)
+	
 	}
 
 
 
 Ch5.1()
 Ch5.2()
+Ch5.3()
