@@ -29,8 +29,12 @@ Ch5.3 <- function(){
 	# make 4x5 array
 	x <- 1:20
 	dim(x) <- c(4,5)
-	index <- array(c(2:4,4:2), dim = c(3,2)
-	
+	index <- array(c(2:4,4:2), dim = c(3,2))
+	print(index)
+	print(x[index])
+	#replace values of x with indices in i with -1
+	x[index] <- -1
+	print(x)
 	}
 
 
