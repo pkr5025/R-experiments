@@ -1,3 +1,4 @@
+library("tcltk")
 # Arrays and matrices
 
 #5.1 Arrays
@@ -80,6 +81,16 @@ Ch5.5 <- function(){
 	y <- c(pi/4,pi/2)
 	z <- outer(x,y,f)
 	print(z)
+
+	# Determinant example
+	quartz()
+	d <- outer (0:9, 0:9)
+	fr <- table(outer(d,d,"-"))
+
+	plot(fr, xlab="Determinant", ylab="Frequency")
+        prompt <- "hit spacebar"
+        extra <- "Nothing here"
+        capture <- tk_messageBox(message = prompt, detail = extra)
 	}
 
 
