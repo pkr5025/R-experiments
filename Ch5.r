@@ -70,6 +70,16 @@ Ch5.5 <- function(){
 	print(b)
 	#outer product all possible products of elements
 	print( a %o% b)
+	cat("\n")
+	cat("\n")
+	cat("\n")
+
+	f <- function(x,y) sin(y)/(1+x)
+	x <- c(1,4)
+
+	y <- c(pi/4,pi/2)
+	z <- outer(x,y,f)
+	print(z)
 	}
 
 
