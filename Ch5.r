@@ -59,9 +59,22 @@ Ch5.4 <- function(){
 	print(A)
 	cat("\n")
 	}
+# Nothing to do for 5.4.1 Mixed vector and array arithmetic. The recycling rule.
+
+#5.5 The outer product of two arrays
+
+Ch5.5 <- function(){
+	a <- array(1:4, dim=c(2,2))
+	b <- array(4:1, dim=c(2,2))
+	print(a)
+	print(b)
+	#outer product all possible products of elements
+	print( a %o% b)
+	}
 
 
 Ch5.1()
 Ch5.2()
 Ch5.3()
 Ch5.4()
+Ch5.5()
