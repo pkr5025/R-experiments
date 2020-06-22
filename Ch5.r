@@ -35,10 +35,23 @@ Ch5.3 <- function(){
 	#replace values of x with indices in i with -1
 	x[index] <- -1
 	print(x)
+	cat("\n")
+	cat("\n")
 	}
+#5.4 The array() function
 
+Ch5.4 <- function(){
+	h <- 1:24
+	Z <- array(h, dim=c(3,4,2))
+	print(Z)
+
+	h2 <- 1:20
+	Z2 <- array(h2, dim=c(3,4,2))
+	print(Z2)
+	}
 
 
 Ch5.1()
 Ch5.2()
 Ch5.3()
+Ch5.4()
