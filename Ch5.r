@@ -44,10 +44,20 @@ Ch5.4 <- function(){
 	h <- 1:24
 	Z <- array(h, dim=c(3,4,2))
 	print(Z)
+	cat("\n")
 
 	h2 <- 1:20
 	Z2 <- array(h2, dim=c(3,4,2))
 	print(Z2)
+	cat("\n")
+
+	Zero <- array(0, c(3,4,2))
+	print(Zero)
+	cat("\n")
+
+	A <- 2*Z + Z2 +1
+	print(A)
+	cat("\n")
 	}
 
 
