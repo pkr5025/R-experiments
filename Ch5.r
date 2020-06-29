@@ -137,6 +137,12 @@ Ch5.7.2 <- function(){
 	A <- array(c(1:5,6,6,3,2), dim=c(3,3))
 	b <- 1:3
 	print(solve(A,b))
+	cat("\n")	
+
+	print(A)
+	print(solve(A))
+	print(solve(A) %*% b) #bad to do, but interesting to do for learning purposes
+
 	}
 
 #Ch5.1()
