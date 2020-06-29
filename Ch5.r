@@ -101,10 +101,20 @@ Ch5.6 <- function(){
 	print(b)
 	}
 
+# 5.7.0 Matrix facilities
+Ch5.7 <- function(){
+	a <- array(1:9, dim=c(3,3))
+	print(nrow(a))
+	print(ncol(a))
+	print(a)
+	print(t(a))
+	}
+
 
 #Ch5.1()
 #Ch5.2()
 #Ch5.3()
 #Ch5.4()
 #Ch5.5()
-Ch5.6()
+#Ch5.6()
+Ch5.7.0()
