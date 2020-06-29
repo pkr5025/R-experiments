@@ -93,9 +93,18 @@ Ch5.5 <- function(){
         capture <- tk_messageBox(message = prompt, detail = extra)
 	}
 
+# 5.6 Generalized transpose of an array
+Ch5.6 <- function(){
+	a <- array(1:9, dim=c(3,3))
+	b <- aperm(a, c(2,1))
+	print(a)
+	print(b)
+	}
 
-Ch5.1()
-Ch5.2()
-Ch5.3()
-Ch5.4()
-Ch5.5()
+
+#Ch5.1()
+#Ch5.2()
+#Ch5.3()
+#Ch5.4()
+#Ch5.5()
+Ch5.6()
