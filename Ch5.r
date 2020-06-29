@@ -99,17 +99,38 @@ Ch5.6 <- function(){
 	b <- aperm(a, c(2,1))
 	print(a)
 	print(b)
+	cat("\n")
+
 	}
 
 # 5.7.0 Matrix facilities
-Ch5.7 <- function(){
+Ch5.7.0 <- function(){
 	a <- array(1:9, dim=c(3,3))
 	print(nrow(a))
 	print(ncol(a))
 	print(a)
 	print(t(a))
-	}
+	cat("\n")
 
+	}
+# 5.7.1 Matrix multiplication
+Ch5.7.1 <- function(){
+	a <- array(1:9, dim=c(3,3))
+	a <- t(a)
+	print(a)
+	a2 = a %*% a
+	print("a2")
+	print(a2)
+	cat("\n")
+
+	print("cross product of a")
+	print(crossprod(a))
+	cat("\n")
+	
+	print("main diagonal of a")
+	print(diag(a))
+	cat("\n")
+	}
 
 #Ch5.1()
 #Ch5.2()
@@ -117,4 +138,5 @@ Ch5.7 <- function(){
 #Ch5.4()
 #Ch5.5()
 #Ch5.6()
-Ch5.7.0()
+#Ch5.7.0()
+Ch5.7.1()
