@@ -172,6 +172,16 @@ Ch5.7.5 <- function(){
 	print(lsfit(A,y))	
 	}
 
+# 5.8 Forming partitioned matrices, cbind() and rbind()
+Ch5.8 <- function(){
+	A <- array(c(1:5,6,6,3,2), dim=c(3,3))
+	AC <- cbind(A,A)
+	AR <- rbind(A,A)
+	print(A)
+	print(AC)
+	print(AR)
+	}
+
 
 #Ch5.1()
 #Ch5.2()
@@ -184,4 +194,5 @@ Ch5.7.5 <- function(){
 #Ch5.7.2()
 #Ch5.7.3()
 #Ch5.7.4()
-Ch5.7.5()
+#Ch5.7.5()
+Ch5.8()
