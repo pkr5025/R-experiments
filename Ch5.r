@@ -165,6 +165,12 @@ Ch5.7.4 <- function(){
 	absdetA <- prod(svd(A)$d)
 	print(absdetA)
 	}
+# 5.7.5 Least squares fitting and the QR decomposition
+Ch5.7.5 <- function(){
+	A <- array(c(1,2,5,7,1), dim=c(5,1))
+	y <- c(3,5,2,12,16)
+	print(lsfit(A,y))	
+	}
 
 
 #Ch5.1()
@@ -177,4 +183,5 @@ Ch5.7.4 <- function(){
 #Ch5.7.1()
 #Ch5.7.2()
 #Ch5.7.3()
-Ch5.7.4()
+#Ch5.7.4()
+Ch5.7.5()
