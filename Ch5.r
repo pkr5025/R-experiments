@@ -145,6 +145,17 @@ Ch5.7.2 <- function(){
 
 	}
 
+# 5.7.3 Eigenvalues and eigenvectors
+Ch5.7.3 <- function(){
+	A <- array(c(1:5,6,6,3,2), dim=c(3,3))
+	eigen <- eigen(A)
+	print(eigen)
+	cat("\n")		
+	eigenvectors <- eigen$vec
+	print(eigenvectors)	
+	}
+
+
 #Ch5.1()
 #Ch5.2()
 #Ch5.3()
@@ -153,5 +164,5 @@ Ch5.7.2 <- function(){
 #Ch5.6()
 #Ch5.7.0()
 #Ch5.7.1()
-Ch5.7.2()
-#Ch5.7.1()
+#Ch5.7.2()
+Ch5.7.3()
