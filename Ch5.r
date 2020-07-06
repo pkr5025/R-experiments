@@ -154,6 +154,17 @@ Ch5.7.3 <- function(){
 	eigenvectors <- eigen$vec
 	print(eigenvectors)	
 	}
+# 5.7.4 Singular value decomposition and determinants
+Ch5.7.4 <- function(){
+	A <- array(c(1:5,6,6,3,2), dim=c(3,3))
+	singular <- svd(A)
+	print(A)
+	print(singular)	
+
+	cat("\n")
+	absdetA <- prod(svd(A)$d)
+	print(absdetA)
+	}
 
 
 #Ch5.1()
@@ -165,4 +176,5 @@ Ch5.7.3 <- function(){
 #Ch5.7.0()
 #Ch5.7.1()
 #Ch5.7.2()
-Ch5.7.3()
+#Ch5.7.3()
+Ch5.7.4()
