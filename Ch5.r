@@ -181,6 +181,14 @@ Ch5.8 <- function(){
 	print(AC)
 	print(AR)
 	}
+# 5.9 The concatenation function c() with arrays
+Ch5.9 <- function(){
+	A <- array(c(1:5,6,6,3,2), dim=c(3,3))
+	print(A)
+	print(c(A))
+	cat("\n")
+	print(as.vector(A))
+	}
 
 
 #Ch5.1()
@@ -195,4 +203,5 @@ Ch5.8 <- function(){
 #Ch5.7.3()
 #Ch5.7.4()
 #Ch5.7.5()
-Ch5.8()
+#Ch5.8()
+Ch5.9()
