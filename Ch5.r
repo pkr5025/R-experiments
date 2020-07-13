@@ -189,6 +189,21 @@ Ch5.9 <- function(){
 	cat("\n")
 	print(as.vector(A))
 	}
+# 5.10 Frequency tables from factors
+Ch5.10 <- function(){
+        somestates <- c("Illinois", "Michigan", "Florida", "Michigan",
+ "Nebraska", "Illinois", "New York")
+        somestatesf <- factor(somestates)
+        print(somestatesf)
+        cat("\n")
+        print(levels(somestatesf))
+        cat("\n")
+
+        incomes <- c(65, 40, 32, 56, 120, 400, 500)
+        incmeans <- tapply(incomes, somestatesf, mean)
+
+	print(table(incomes, somestatesf))
+	}
 
 
 #Ch5.1()
@@ -204,4 +219,5 @@ Ch5.9 <- function(){
 #Ch5.7.4()
 #Ch5.7.5()
 #Ch5.8()
-Ch5.9()
+#Ch5.9()
+Ch5.10()
