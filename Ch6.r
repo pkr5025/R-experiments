@@ -29,12 +29,26 @@ Ch6.2.1 <- function(){
 	print(list.three)
 	
 	}
-Ch6.3 <- function(){
+# 6.3 Data Frames
+# Nothing to do
+
+# 6.3.1 Making data frames 
+Ch6.3.1 <- function(){
+        somestates <- c("Illinois", "Michigan", "Florida", "Michigan",
+	 "Nebraska", "Illinois", "New York")
+        somestatesf <- factor(somestates)
+
+        incomes <- c(65, 40, 32, 56, 120, 400, 500)
+        incmeans <- tapply(incomes, somestatesf, mean)
+
+
+	dataframe <- data.frame(home = somestatesf, loot = incomes)
+	print(dataframe)
 	}
 
 
 
 #Ch6.1()
 #Ch6.2()
-Ch6.2.1()
-#Ch6.3()
+#Ch6.2.1()
+Ch6.3.1()
