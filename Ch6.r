@@ -10,8 +10,13 @@ Ch6.1 <- function(){
 	print(Lst[2]) #for comparison 
 	}
 
-
+# 6.2 Constructing and modifying lists
 Ch6.2 <- function(){
+	a = 1:3
+	b = 1:3
+	c = matrix(c(a,b), nrow=3, ncol=3)
+	Lst <- list(name_1 =a, name_2 = b, name_3 = c)
+	print(Lst)
 	}
 Ch6.3 <- function(){
 	}
@@ -20,6 +25,6 @@ Ch6.4 <- function(){
 
 
 
-Ch6.1()
+#Ch6.1()
 Ch6.2()
 Ch6.3()
