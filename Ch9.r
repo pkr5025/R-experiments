@@ -31,10 +31,24 @@ Ch9.2.2 <- function(){
 	xc <- 1:10
 	yc <- c(3,6,7,4,1,3,34,3,21,32)
 	for (i in 1:length(yc)){
-	print(c(xc[[i]], yc[[i]]))
+	print(c(xc[[i]], yc[[i]]))	
+	}
 	
+	# Same as above using repeat
+	i=1
+	repeat{
+	print(c(xc[[i]], yc[[i]]))
+	i=i+1	
+	if (i==11)
+	break	
 	}
 
+	# Same as above using while
+	i=1
+	while(i<11){
+	print(c(xc[[i]], yc[[i]]))
+	i = i+1
+	}
 	}
 
 #Ch9.1()
