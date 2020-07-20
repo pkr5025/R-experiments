@@ -46,7 +46,7 @@ Ch6.3.1 <- function(){
 	print(dataframe)
 	}
 
-#Ch6.3.2 attach() and detach()
+# 6.3.2 attach() and detach()
 Ch6.3.2 <- function(){
         somestates <- c("Illinois", "Michigan", "Florida", "Michigan",
          "Nebraska", "Illinois", "New York")
@@ -65,9 +65,19 @@ Ch6.3.2 <- function(){
 	print(loot)
 	}
 
+# 6.3.3 Working with data frames
+# Nothing to do
+
+# 6.3.4 Attaching arbitrary lists
+# Nothing to do
+
+# 6.3.4 Managing the search path
+# Nothing to do
+
+
 
 #Ch6.1()
 #Ch6.2()
 #Ch6.2.1()
 #Ch6.3.1()
-Ch6.3.2()
+#Ch6.3.2()
