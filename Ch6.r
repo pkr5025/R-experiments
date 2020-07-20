@@ -46,9 +46,28 @@ Ch6.3.1 <- function(){
 	print(dataframe)
 	}
 
+#Ch6.3.2 attach() and detach()
+Ch6.3.2 <- function(){
+        somestates <- c("Illinois", "Michigan", "Florida", "Michigan",
+         "Nebraska", "Illinois", "New York")
+        somestatesf <- factor(somestates)
+
+        incomes <- c(65, 40, 32, 56, 120, 400, 500)
+        incmeans <- tapply(incomes, somestatesf, mean)
+
+        dataframe <- data.frame(home = somestatesf, loot = incomes)
+
+	#print(loot) error, need to attach first
+
+	attach(dataframe)
+	print(home)
+	cat("\n")
+	print(loot)
+	}
 
 
 #Ch6.1()
 #Ch6.2()
 #Ch6.2.1()
-Ch6.3.1()
+#Ch6.3.1()
+Ch6.3.2()
