@@ -26,7 +26,17 @@ Ch9.2.1 <- function(){
 
 		
 	}
+# 9.2.2 Repetitive execution: for loops, repeat, and while
+Ch9.2.2 <- function(){
+	xc <- 1:10
+	yc <- c(3,6,7,4,1,3,34,3,21,32)
+	for (i in 1:length(yc)){
+	print(c(xc[[i]], yc[[i]]))
+	
+	}
 
+	}
 
 #Ch9.1()
-Ch9.2.1()
+#Ch9.2.1()
+Ch9.2.2()
